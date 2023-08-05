@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c37570d.css",
-    "main.js": "/static/js/main.93496d0e.js",
-    "static/js/845.3abb300a.chunk.js": "/static/js/845.3abb300a.chunk.js",
-    "static/media/denied.mp3": "/static/media/denied.5d3b312c7b9b91de6333.mp3",
-    "static/media/coin.mp3": "/static/media/coin.d7f17de59df9ac275020.mp3",
-    "index.html": "/index.html",
-    "main.5c37570d.css.map": "/static/css/main.5c37570d.css.map",
-    "main.93496d0e.js.map": "/static/js/main.93496d0e.js.map",
-    "845.3abb300a.chunk.js.map": "/static/js/845.3abb300a.chunk.js.map"
+    "main.css": "/react-vending-machine/static/css/main.5c37570d.css",
+    "main.js": "/react-vending-machine/static/js/main.aefb7396.js",
+    "static/js/845.3abb300a.chunk.js": "/react-vending-machine/static/js/845.3abb300a.chunk.js",
+    "static/media/denied.mp3": "/react-vending-machine/static/media/denied.5d3b312c7b9b91de6333.mp3",
+    "static/media/coin.mp3": "/react-vending-machine/static/media/coin.d7f17de59df9ac275020.mp3",
+    "index.html": "/react-vending-machine/index.html",
+    "main.5c37570d.css.map": "/react-vending-machine/static/css/main.5c37570d.css.map",
+    "main.aefb7396.js.map": "/react-vending-machine/static/js/main.aefb7396.js.map",
+    "845.3abb300a.chunk.js.map": "/react-vending-machine/static/js/845.3abb300a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c37570d.css",
-    "static/js/main.93496d0e.js"
+    "static/js/main.aefb7396.js"
   ]
 }
