@@ -14,27 +14,27 @@ function App() {
         <div className="coins">
           <CoinButton
             value={0.1}
-            src="/images/coins/Greece_10cent.jpg"
+            src="./images/coins/Greece_10cent.jpg"
             alt="10 cent coin"
           />
           <CoinButton
             value={0.2}
-            src="/images/coins/Greece_20cent.jpg"
+            src="./images/coins/Greece_20cent.jpg"
             alt="20 cent coin"
           />
           <CoinButton
             value={0.5}
-            src="/images/coins/Greece_50cent.jpg"
+            src="./images/coins/Greece_50cent.jpg"
             alt="50 cent coin"
           />
           <CoinButton
             value={1}
-            src="/images/coins/Greece_1euro.jpg"
+            src="./images/coins/Greece_1euro.jpg"
             alt="1 euro coin"
           />
           <CoinButton
             value={2}
-            src="/images/coins/Greece_2euro.jpg"
+            src="./images/coins/Greece_2euro.jpg"
             alt="2 euro coin"
           />
         </div>
