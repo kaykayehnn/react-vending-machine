@@ -37,7 +37,7 @@ function App() {
             alt="2 euro coin"
           />
         </div>
-        <ToastContainer />
+        <ToastContainer autoClose={2500} />
       </main>
     </VendingMachineContextProvider>
   );
