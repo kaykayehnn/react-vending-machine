@@ -20,7 +20,7 @@ function Product({ src, name, price, buyProduct }) {
       onClick={() => {
         try {
           buyProduct(price);
-          toast.success(`You bought ${name}`);
+          toast.success(`You bought ${name} for ${price.toFixed(2)}`);
           setPrice(null);
         } catch (e) {
           toast.error(e.message);
