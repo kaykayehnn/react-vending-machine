@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.vending-container {
+  position: relative;
+}
+
+.products {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  /* background: rgba(255, 0, 0, 0.5); */
+  top: 14%;
+  bottom: 38%;
+  left: 21%;
+  right: 35%;
+}
+
+.display {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 16.5%;
+  bottom: 78%;
+  left: 69%;
+  right: 20.5%;
+  color: black;
+  background-color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.product-image {
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
+.vending-machine {
+  max-width: 600px;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.coins {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.coin {
+  height: 100px;
+  transition: all 0.5s;
+  /* max-width: 50px; */
+}
+
+.coin:hover,
+.coin:focus {
+  transform: scale(1.05);
+}
+
+.button-coin,
+.button-product {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.button-coin.spinning {
+  animation: spin 0.3s ease-in-out;
+}
+
+@keyframes spin {
+  0% {
     transform: rotate(360deg);
   }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.button-product:hover {
+  background: white;
+}
+
+.button-product:active {
+  background: greenyellow;
 }
