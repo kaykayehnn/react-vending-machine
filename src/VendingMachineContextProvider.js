@@ -15,7 +15,7 @@ function VendingMachineContextProvider({ children }) {
   const insertCoin = (coin) => setValue((value) => value + coin);
   const buy = (price) => {
     if (price > value) {
-      throw new Error(`Insert ${(price - value).toFixed(2)} more`);
+      throw new Error(`Insert ${(price - value).toFixed(2)}€ more`);
     }
 
     setValue((value) => value - price);
