@@ -38,6 +38,18 @@ body {
   font-weight: bold;
 }
 
+.reset-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 51.6%;
+  bottom: 46.5%;
+  left: 69.8%;
+  right: 21.5%;
+  background-color: white;
+  font-size: 1vw;
+}
+
 .product-image {
   max-width: 100%;
 }
@@ -69,21 +81,13 @@ body {
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 700px) {
-  .main-container {
-    display: block;
-  }
-  .coins {
-    flex-direction: row;
-  }
-}
-
 .button-coin {
   max-width: 100px;
 }
 
 .button-coin,
-.button-product {
+.button-product,
+.reset-button {
   background: none;
   color: inherit;
   border: none;
@@ -112,4 +116,16 @@ body {
 
 .button-product:active {
   background: greenyellow;
+}
+
+@media screen and (max-width: 700px) {
+  .main-container {
+    display: block;
+  }
+  .coins {
+    flex-direction: row;
+  }
+  .display {
+    font-size: 3vw;
+  }
 }

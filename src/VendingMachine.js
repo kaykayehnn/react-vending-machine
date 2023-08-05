@@ -1,6 +1,7 @@
 import useSwr from "swr";
 import Display from "./Display";
 import Product from "./Product";
+import ResetButton from "./ResetButton";
 import { useVending } from "./VendingMachineContextProvider";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -31,14 +32,17 @@ function VendingMachine() {
                   );
                 }
 
-                buy(p.price);
+                const change = buy(p.price);
 
                 p.quantity--;
+
+                return change;
               }}
             />
           ))}
       </div>
       <Display />
+      <ResetButton />
     </div>
   );
 }

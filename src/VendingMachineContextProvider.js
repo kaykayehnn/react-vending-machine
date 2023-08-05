@@ -19,8 +19,12 @@ function VendingMachineContextProvider({ children }) {
     }
 
     setValue((value) => value - price);
+
+    return value - price;
   };
+
   const reset = () => setValue(0);
+  const returnChange = reset;
 
   return (
     <VendingMachineContext.Provider
@@ -31,6 +35,7 @@ function VendingMachineContextProvider({ children }) {
         insertCoin,
         buy,
         reset,
+        returnChange,
       }}
     >
       {children}

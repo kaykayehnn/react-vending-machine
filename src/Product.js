@@ -4,7 +4,7 @@ import { useVending } from "./VendingMachineContextProvider";
 import deniedSound from "./sounds/denied.mp3";
 
 function Product({ src, name, price, buyProduct }) {
-  const { setPrice } = useVending();
+  const { setPrice, returnChange } = useVending();
   const [play] = useSound(deniedSound);
 
   const onMouseOver = () => {
@@ -19,9 +19,13 @@ function Product({ src, name, price, buyProduct }) {
     <button
       onClick={() => {
         try {
-          buyProduct(price);
-          toast.success(`You bought ${name} for ${price.toFixed(2)}`);
+          const change = buyProduct(price);
+          let message = `You bought ${name} for ${price.toFixed(2)}€`;
+          if (change > 0) message += `. Your change is ${change.toFixed(2)}€`;
+
+          toast.success(message);
           setPrice(null);
+          returnChange();
         } catch (e) {
           toast.error(e.message);
           play(deniedSound);
