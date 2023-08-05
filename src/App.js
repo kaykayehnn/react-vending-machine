@@ -8,6 +8,7 @@ import VendingMachineContextProvider from "./VendingMachineContextProvider";
 function App() {
   return (
     <VendingMachineContextProvider>
+      <h1 className="title">Byte & Sip: The Automat Tavern</h1>
       <main className="main-container">
         <VendingMachine />
         <div className="coins">
