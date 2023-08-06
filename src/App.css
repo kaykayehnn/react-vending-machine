@@ -137,3 +137,14 @@ body {
     font-size: 3vw;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .display {
+    /* Set a limit to the font size */
+    font-size: 22px;
+  }
+
+  .reset-button {
+    font-size: 14px;
+  }
+}

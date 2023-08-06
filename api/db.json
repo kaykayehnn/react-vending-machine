@@ -2,25 +2,25 @@
   "products": [
     {
       "name": "Coke",
-      "image": "/images/products/coke.png",
+      "image": "./images/products/coke.png",
       "price": 2,
       "quantity": 10
     },
     {
       "name": "Beer",
-      "image": "/images/products/heineken.png",
+      "image": "./images/products/heineken.png",
       "price": 3,
       "quantity": 5
     },
     {
       "name": "Yogurt",
-      "image": "/images/products/yogurt.png",
+      "image": "./images/products/yogurt.png",
       "price": 2.5,
       "quantity": 15
     },
     {
       "name": "Chips",
-      "image": "/images/products/chips.png",
+      "image": "./images/products/chips.png",
       "price": 4,
       "quantity": 2
     }
